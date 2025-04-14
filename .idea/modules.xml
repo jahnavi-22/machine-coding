@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/conference-room-system/conference-room-system.iml" filepath="$PROJECT_DIR$/conference-room-system/conference-room-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/conferenceroomsystem/conferenceroomsystem.iml" filepath="$PROJECT_DIR$/conferenceroomsystem/conferenceroomsystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniwallet/miniwallet.iml" filepath="$PROJECT_DIR$/miniwallet/miniwallet.iml" />
       <module fileurl="file://$PROJECT_DIR$/zipreel/zipreel.iml" filepath="$PROJECT_DIR$/zipreel/zipreel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipreel-cms/zipreel-cms.iml" filepath="$PROJECT_DIR$/zipreel-cms/zipreel-cms.iml" />
     </modules>
   </component>
 </project>

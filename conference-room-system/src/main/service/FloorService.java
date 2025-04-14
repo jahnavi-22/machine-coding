@@ -13,7 +13,19 @@ public class FloorService {
         this.building = building;
     }
 
-    public String addFloor(String buildingName, Floor floor) {
-        return building.addFloor(buildingName, floor);
+    public void addFloor(Floor floor) {
+        if (buildingRepository.hasBuilding(building.getName())) {
+            building.addFloor(floor);
+        } else {
+            System.out.println("Building does not exist");
+        }
+    }
+
+    public boolean hasFloor(String name) {
+        return building.hasFloor(name);
+    }
+
+    public Floor getFloor(String name) {
+        return building.getFloor(name);
     }
 }

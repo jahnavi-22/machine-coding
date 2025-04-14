@@ -25,9 +25,9 @@ public class BookingRepository {
     public boolean hasBooking(Timeslot slot, String building, String floor, String id){
         return userBookings.stream().anyMatch(booking ->
                 booking.getTimeslot().equals(slot) &&
-                booking.getBuildingName().equals(building) &&
-                booking.getFloorName().equals(floor) &&
-                booking.getRoomId().equals(id));
+                        booking.getBuildingName().equals(building) &&
+                        booking.getFloorName().equals(floor) &&
+                        booking.getRoomId().equals(id));
     }
 
     public List<Booking> getAllBookings(){
@@ -37,8 +37,8 @@ public class BookingRepository {
     public void cancelBooking(Timeslot slot, String building, String floor, String id){
         userBookings.removeIf(booking ->
                 booking.getTimeslot().equals(slot) &&
-                booking.getBuildingName().equals(building) &&
-                booking.getFloorName().equals(floor) &&
-                booking.getRoomId().equals(id));
+                        booking.getBuildingName().equals(building) &&
+                        booking.getFloorName().equals(floor) &&
+                        booking.getRoomId().equals(id));
     }
 }
